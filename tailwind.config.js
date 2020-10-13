@@ -20,6 +20,8 @@ module.exports = {
       current: "currentColor",
       black: "#000",
       white: "#fff",
+      "catalina-blue": "#243B53",
+
       gray: {
         "100": "#f7fafc",
         "200": "#edf2f7",
@@ -272,16 +274,10 @@ module.exports = {
       ]
     },
     fontSize: {
-      xs: "0.75rem",
-      sm: "0.875rem",
-      base: "1rem",
-      lg: "1.125rem",
-      xl: "1.25rem",
-      "2xl": "1.5rem",
-      "3xl": "1.875rem",
-      "4xl": "2.25rem",
-      "5xl": "3rem",
-      "6xl": "4rem"
+      14: "14px",
+      16: "16px",
+      18: "18px",
+      24: "24px"
     },
     fontWeight: {
       hairline: "100",

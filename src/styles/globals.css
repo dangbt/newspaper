@@ -1,12 +1,46 @@
-@tailwind base;
+@import "tailwindcss/base";
 
-@tailwind components;
+@import "tailwindcss/components";
 
-@tailwind utilities;
+@import "tailwindcss/utilities";
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+  @apply bg-white text-catalina-blue;
+}
+
+@import "./menu-list.css";
+
+
+.menu-list li::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 0;
+  height: 4px;
+  background-color: #243B53;
+  transition: all 1.5s linear;
+}
+.menu-list li:hover::after {
+  max-width: 1000px;
+}
+
+.menu-list li.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1000px;
+  height: 4px;
+  background-color: #243B53;
+  transition: all 1.5s linear;
 }
