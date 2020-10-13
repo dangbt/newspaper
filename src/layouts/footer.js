@@ -7,7 +7,6 @@ export default function Footer() {
         <div>
           <Link href="/">
             <a>
-              {" "}
               <svg
                 width="283"
                 height="64"

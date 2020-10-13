@@ -1,8 +1,8 @@
-@import "tailwindcss/base";
+@tailwind base;
 
-@import "tailwindcss/components";
+@tailwind components;
 
-@import "tailwindcss/utilities";
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -12,9 +12,6 @@ body {
   
   @apply bg-white text-catalina-blue;
 }
-
-@import "./menu-list.css";
-
 
 .menu-list li::after {
   content: '';
@@ -46,4 +43,41 @@ body {
 }
 .right-section-item:last-child {
   margin-bottom: 0;
+}
+
+/* table */
+
+table {
+  border-spacing: 0;
+  border-collapse: unset;
+  @apply w-full border border-gray-500;
+}
+
+tr:last-child td {
+  @apply border-b-0;
+
+}
+
+tr td:last-child {
+  @apply border-r-0;
+}
+
+th,
+td {
+  @apply px-4 whitespace-no-wrap border-b border-r border-gray-500;
+}
+
+td {
+  @apply text-catalina-blue;
+}
+
+tbody {
+  @apply bg-white;
+}
+th {
+  @apply py-2;
+}
+
+th {
+  @apply  bg-gray-500;
 }

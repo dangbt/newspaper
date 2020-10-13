@@ -15,6 +15,7 @@ export default function RightSectionItem() {
             "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
           }
           alt=""
+          loading="lazy"
         />
       </div>
       <div className="w-3/4">

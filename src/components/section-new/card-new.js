@@ -15,6 +15,7 @@ export default function CardItem({ src, title }) {
             className="w-full h-full"
             src={src}
             alt=""
+            loading="lazy"
           />
         </div>
         <div className="p-3">
