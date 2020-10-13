@@ -1,11 +1,7 @@
 export const DEFAULT_MENU = [
   {
-    txt: "Trang chủ",
-    link: "/"
-  },
-  {
     txt: "Tin tức",
-    link: "/tin-tuc"
+    link: "/"
   },
   {
     txt: "Giá vàng",

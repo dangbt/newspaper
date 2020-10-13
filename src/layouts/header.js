@@ -8,12 +8,12 @@ export default function Header({ title = "Trang chủ | Bình Sơn" }) {
   const router = useRouter();
   const pathname = router.pathname;
   return (
-    <header className="flex items-center justify-between py-2">
+    <header className="sticky top-0 flex items-center justify-between py-2 pb-3 bg-white">
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <div className="hidden md:block">
         <Link href="/">
           <a>
             {" "}

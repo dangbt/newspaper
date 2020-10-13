@@ -44,3 +44,6 @@ body {
   background-color: #243B53;
   transition: all 1.5s linear;
 }
+.right-section-item:last-child {
+  margin-bottom: 0;
+}

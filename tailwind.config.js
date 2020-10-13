@@ -277,7 +277,8 @@ module.exports = {
       14: "14px",
       16: "16px",
       18: "18px",
-      24: "24px"
+      24: "24px",
+      36: "36px"
     },
     fontWeight: {
       hairline: "100",
