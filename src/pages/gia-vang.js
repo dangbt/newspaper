@@ -10,7 +10,7 @@ const jsDateFormatter = {
   // note that the native implementation of Date functions differs between browsers
   formatDate: date => date.toLocaleDateString(),
   parseDate: str => new Date(str),
-  placeholder: "M/D/YYYY"
+  placeholder: "DD/MM/YYYY"
 };
 
 const data = [
@@ -72,6 +72,14 @@ export default function GoldPrice() {
               }
             }
           ]
+        },
+        title: {
+          display: true,
+          position: "left",
+          text: "ahih"
+        },
+        legend: {
+          position: "bottom"
         }
       }
     });
@@ -143,7 +151,7 @@ export default function GoldPrice() {
           <div className="flex items-center justify-between">
             <h1 className="my-4 font-bold text-yellow-600 text-24">Giá vàng</h1>
             <div className="relative z-0">
-              <DateInput {...jsDateFormatter} />
+              <DateInput {...jsDateFormatter} locale="vi" value={new Date()} />
             </div>
           </div>
           <div className="w-full overflow-auto">
@@ -161,13 +169,16 @@ export default function GoldPrice() {
             <h1 className="my-4 font-bold text-yellow-600 text-24">
               Biểu đồ giá vàng 30 ngày gần nhất
             </h1>
-            <Select>
-              <option>SJC HN</option>
-              <option>SJC HN</option>
-              <option>SJC HN</option>
-              <option>SJC HN</option>
-              <option>SJC HN</option>
-            </Select>
+            <div>
+              <span className="mr-2 font-bold text-14">Chọn mã vàng</span>
+              <Select>
+                <option>SJC HN</option>
+                <option>SJC HN</option>
+                <option>SJC HN</option>
+                <option>SJC HN</option>
+                <option>SJC HN</option>
+              </Select>
+            </div>
           </div>
           <div className="relative">
             <canvas id="chart-id"></canvas>
