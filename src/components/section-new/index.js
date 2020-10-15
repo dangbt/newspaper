@@ -34,14 +34,15 @@ const NewsList = [
   }
 ];
 
-export default function SectionNew() {
+export default function SectionNew({ posts, tagCategory }) {
   return (
     <div className="my-4">
-      <h1 className="my-2 font-bold text-18 lg:text-24">Tin tức</h1>
+      <h1 className="my-2 font-bold text-24 lg:text-36">
+        Tin {tagCategory.toLowerCase()}
+      </h1>
       <div className="-mx-1">
-        {NewsList.map(item => (
-          <CardNew {...item} />
-        ))}
+        {posts.length > 0 &&
+          posts.map(item => <CardNew {...item} tagCategory={tagCategory} />)}
       </div>
     </div>
   );
