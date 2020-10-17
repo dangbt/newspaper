@@ -10,15 +10,15 @@ export const DEFAULT_MENU = [
   {
     txt: "Thế giới",
     link: "/the-gioi"
-  },
-  {
-    txt: "Giá vàng",
-    link: "/gia-vang"
-  },
-  {
-    txt: "Giải trí",
-    link: "/giai-tri"
   }
+  // {
+  //   txt: "Giá vàng",
+  //   link: "/gia-vang"
+  // },
+  // {
+  //   txt: "Giải trí",
+  //   link: "/giai-tri"
+  // }
   // {
   //   txt: "Chứng khoán",
   //   link: "/chung-khoan"
