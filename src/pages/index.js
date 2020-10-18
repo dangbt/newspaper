@@ -42,7 +42,6 @@ export async function getServerSideProps(context) {
     const categoryId = DEFAULT_CATEGORY_ID[key].id;
     const tagCategory = DEFAULT_CATEGORY_ID[key].tag;
     if (res[index].code === 200) {
-      console.log(res[index].data[categoryId]);
       posts = res[index].data[categoryId].data;
     }
     return {
