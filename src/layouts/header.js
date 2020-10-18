@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { DEFAULT_MENU } from "../constants";
 
-export default function Header({ title = "Trang chủ | Bình Sơn" }) {
+export default function Header({ title = "Tin tức | Tin nóng" }) {
   const router = useRouter();
   const pathname = router.pathname;
   const { category } = router.query;
